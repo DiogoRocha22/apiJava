@@ -1,0 +1,45 @@
+GET http://localhost:8081/api/pizzas
+
+###
+GET http://localhost:8081/api/pizzas/99
+
+###
+
+POST http://localhost:8081/api/pizzas
+Content-Type: application/json
+
+{
+    "nome":"5 queijos",
+    "ativa": true,
+    "tipo": "SALGADA",
+    "cupomDesconto": {
+        "descricao":"Professor UNIFAA",
+        "valor": 15.0
+    },
+    "observacao":"Pizza composta for mussrela, provolone ...",
+    "modelos": [
+        { "id": 1 },
+        { "id": 2 },
+        { "id": 3 },
+        { "id": 4 }
+    ],
+    "ingredientes": [
+        { "id": 1 }
+    ]
+}
+
+###
+
+PUT http://localhost:8081/api/pizzas/2
+Content-Type: application/json
+
+{
+    "nome":"Queijo Gorgonzola",
+    "dataValidade": "2025-09-16T20:00:00",
+    "marca": "Presidente",
+    "observacao":"Observação do queijo"
+}
+
+###
+DELETE http://localhost:8081/api/pizzas/4
+

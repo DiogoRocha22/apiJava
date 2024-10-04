@@ -1,0 +1,12 @@
+PUT http://localhost:8081/api/produtos/8
+Content-Type: application/json
+
+{
+  "nome": "Celular Samsung",
+  "preco": 99.99,
+  "categoria": {
+    "id": 4
+  },
+  "ativo": true,
+  "descricao": "Descrição do Produto Exemplo"
+}

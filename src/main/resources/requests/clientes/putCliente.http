@@ -1,0 +1,19 @@
+PUT  http://localhost:8081/api/clientes/6
+Content-Type: application/json
+
+{
+  "nome": "Diogo",
+  "sobrenome": "Pacheco",
+  "dataNasc": "1990-01-01T00:00:00.000+00:00",
+  "enderecos": [
+    {
+      "rua": "Rua Exemplo",
+      "cidade": "Cidade Exemplo",
+      "estado": "Estado Exemplo",
+      "cep": "00000-000",
+      "numero": 123,
+      "bairro": "Bairro Exemplo",
+      "complemento": "Apto 1"
+    }
+  ]
+}

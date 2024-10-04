@@ -1,0 +1,27 @@
+GET http://localhost:8081/api/modelo-pizzas
+
+###
+GET http://localhost:8081/api/modelo-pizzas/1
+
+###
+
+POST http://localhost:8081/api/modelo-pizzas
+Content-Type: application/json
+
+{
+    "tamanho": "Super gigante",
+    "valor": 50.0
+}
+
+###
+
+PUT http://localhost:8081/api/modelo-pizzas/4
+Content-Type: application/json
+
+{
+    "tamanho": "Super gigante",
+    "valor": 50.0
+}
+
+###
+DELETE http://localhost:8081/api/modelo-pizzas/4

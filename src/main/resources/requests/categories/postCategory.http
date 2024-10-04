@@ -1,0 +1,8 @@
+POST http://localhost:8081/api/categorias
+Content-Type: application/json
+
+{
+  "nome": "Eletronicos",
+  "descricao": "Produots eletro-domésticos"
+}
+

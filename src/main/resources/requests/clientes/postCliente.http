@@ -1,0 +1,28 @@
+POST http://localhost:8081/api/clientes
+Content-Type: application/json
+
+{
+  "nome": "Diogo",
+  "sobrenome": "Rocha",
+  "dataNasc": "2003-06-29T00:00:00.000+00:00",
+  "enderecos": [
+    {
+      "rua": "Rua Jorge",
+      "cidade": "Valença",
+      "estado": "Estado Exemplo",
+      "cep": "00000-000",
+      "numero": 123,
+      "bairro": "Bairro Exemplo",
+      "complemento": "Apto 1"
+    },
+    {
+      "rua": "Rua Jorge",
+      "cidade": "Rio",
+      "estado": "Estado Exemplo",
+      "cep": "00000-000",
+      "numero": 123,
+      "bairro": "Bairro Exemplo",
+      "complemento": "Apto 1"
+    }
+  ]
+}

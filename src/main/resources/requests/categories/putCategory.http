@@ -1,0 +1,7 @@
+PUT http://localhost:8081/api/categorias/3
+Content-Type: application/json
+
+{
+  "nome": "Categoria Atualizada",
+  "descricao": "Descrição atualizada"
+}

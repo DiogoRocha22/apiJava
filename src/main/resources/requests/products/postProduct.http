@@ -1,0 +1,12 @@
+POST http://localhost:8081/api/produtos
+Content-Type: application/json
+
+{
+  "nome": "Produto celular",
+  "preco": 999.99,
+  "categoria": {
+    "id": 3
+  },
+  "ativo": true,
+  "descricao": "Produto eletronico móvel"
+}
